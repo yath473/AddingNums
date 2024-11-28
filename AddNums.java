@@ -5,13 +5,13 @@ public class AddNums
 		int a = Integer.parseInt(args[0]);
         int b = Integer.parseInt(args[1]);
 
-		Addition an = (x, y) -> {
+		Addition an = (start, end) -> {
 		int sum = 0;
-			for(int i = x; i <= y; i++){
+			for(int i = start; i <= end; i++)
+			{
 				sum += i;
 			}
 			return sum;
-
 		};
 
 		int result = an.add(a, b);
